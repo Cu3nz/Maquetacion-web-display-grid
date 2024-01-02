@@ -1,0 +1,211 @@
+/*todo HEADER DISPLAY GRID CON SUS ESTILOS */
+header{
+    display: grid;
+    grid-template-columns: repeat(4,25%); /*? 4 columnas al 25% cada una*/
+    margin-top: -20px;
+    place-items: center;  /*? Centrar el headeer indicando primero el valor para align-items y después el valor para justify-items.*/
+    font-family: 'Lobster', sans-serif;
+    color: green;
+    
+}
+/*todo FIN DE HEADER DISPLAY GRID CON SUS ESTILOS */
+
+/*TODO H1 Y H3 CON SU ESTILO DE GRID */
+
+h1{
+    grid-column-start: 1;  /*? Empieza en la columna 1 */
+    grid-column-end: span 5; /*? Y se expande hasta la columna 5*/
+}
+
+h3{ /*todo Estilo para el h4 del header, el que pone mi nombre y asignatura*/
+    margin-top: -20px; /*? Para que este mas cerca de mi nombre y el modulo*/
+    color: teal;
+    grid-column-start: 1; /*? Empieza en la columna 1 */
+    grid-column-end: span 5; /*? Y se expande hasta la columna 5*/
+    
+}
+/*TODO  FIN DE H1 Y H3 CON SU ESTILO DE GRID */
+
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Lobster', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+/*TODO MAIN DISPLAY GRID*/
+  
+  main{
+    display: grid;
+    grid-template-columns: repeat(4, 48vh); /*? Defino 4 columnas cada una de un 48vh*/
+    grid-template-rows: repeat(2,85vh); /*? Defino 2 filas de 85vh*/
+    }
+     
+
+/*TODO  FIN DE MAIN DISPLAY GRID*/
+
+  #menu_nav ul li {
+    list-style-type: none;
+    margin-top: 0.5%;
+  }
+
+
+  #menu_nav ul li a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+
+/* TODO PARA EL PRIMER FIGURE */
+
+#imagen1{
+    border: 2px solid #ffffff; /*? Borde que rodea el figure*/
+    border-radius: 20px; /*? Para que tenga un margen */
+    padding: 20px;
+    width: 80%; /*? Ancho del contenedor*/
+    height: 80vh; /*? Alto del contenedor para que concuerde con los demas figures*/
+    
+}
+
+#imagen1 #imagen_fila_1{
+    width: 100%; /* ? Ajustar el ancho al 100% del  contenedor */
+    height: auto; /* ? Ajusta la altura para mantener la proporción de la imagen */
+    border-radius: 20px;    
+    display: block; /*? Lo definimos como un bloque*/
+    margin: 0px auto; /*? Centramos la imagen*/
+    
+    
+}
+
+#imagen1 #figcaption_img1{ /** para el figcaption de la primera imagen*/
+    color: green;
+    margin-top: 20px;
+    width: auto;
+    text-align: center;
+    font-size: 1.2vw;
+}
+/* TODO PARA EL PRIMER FIGURE */
+
+.figure{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+/*TODO -------------------- ESTILOS PARA LOS DEMAS FIGURES -----------------------------*/
+
+.demas_fotos{
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    height: 80vh; /* ? Margen entre las 2 primeras fotos de la segunda fila*/ 
+}
+
+.img_demas_fotos{
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    display: block;
+    margin: 0px auto;
+
+
+}
+
+figcaption{
+ color: green;   
+ text-align: center;
+ margin-top: 20px;
+ font-size: 1.1vw;
+}
+
+/*TODO -------------------- FIN DE ESTILOS PARA LOS DEMAS FIGURES -----------------------------*/
+
+  /*TODO --------------- ESTRUCTURANDO EL GRID ---------------- */
+  
+  
+  #menu_nav{ /** Para el menu del nav*/
+    /* background-color: aqua; */
+    grid-column: 1 / 2; /* ? Empieza en la columna 1 y acaba en la segunda */
+    grid-row: 1 / 2; /* ? Empieza en la fila 1 y acaba en la 3 */
+}
+
+#imagen1 { /**Para la primera imagen */
+    grid-column: 2/4; /* ?Empieza en la columna 2 y acaba en la 4  */
+    grid-row: 1/ 2; /* ? Empieza en la fila 1 y acaba en la tercera */
+}
+
+#primera_fila_2_img{ /**Para la segunda foto de la primera fila*/
+    grid-column: 4/5; /*? Empieza en la 4 columna y acaba en la 5 */
+    grid-row: 1/2; /* ? Empieza en la primera fila y acaba en la 2*/
+}
+
+#seguda_fila_1_img{ /**Para la primera foto de la segunda fila*/
+    grid-column: 2/3; /* ? Empieza en la segunda columna y acaba en la tercera*/
+    grid-row: 2/3; /* ? Empieza en la segunda fila y acaba en la 3*/
+}
+
+#segunda_fila_2_img{ /**Para la segunda foto de la segunda fila*/
+    grid-column: 3/4; /*? Empieza en la 3 columna y acaba en la 4*/
+    grid-row: 2/3; /*? Empieza en la segunda fila y acaba en la 3*/
+}
+
+#segunda_fila_3_img{ /**Para la tercera foto de la segunda fila*/
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/*TODO --------------- FIN ESTRUCTURANDO EL GRID ---------------- */
+
+/*TODO ESTRUCTURANDO EL FOOTER */
+
+footer{
+  padding: 2em; /* ? Margen entre el contenido y el borde*/
+  display: grid;
+  grid-template-columns: repeat(5,30vh);
+  gap: 5%;
+  grid-template-rows: auto;
+  font-size: 1.3vw;
+}
+
+
+footer div:nth-child(1){
+  /* background-color: red; */
+  grid-column: 1/2;  /*? Empieza en la columna 1 y acaba en la 2 */
+  color: green;
+}
+
+footer div:nth-child(2){
+  /* background-color: yellow; */
+  grid-column: 2 /  5; /*? Empieza en la columna 2 y acaba en la 5 */
+  text-align: center;
+  color: teal;
+}
+
+footer div:nth-child(3){
+  /* background-color: blue; */
+  grid-column: 5/6; /*? Empieza en la columna 5  y acaba en la 6 */
+}
+
+
+footer #derecho{
+  text-align: center;
+}
+
+footer #derecho img{
+  margin-top: 2%;
+  width: 20%;
+}
+
+/*TODO FIN ESTRUCTURANDO EL FOOTER */
+
+
+/*Sergio gallegos guerrero*/
+
+
+
+
