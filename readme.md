@@ -61,7 +61,7 @@ Para interactuar con la página web, simplemente ejecute el archivo `index.html`
 
 ## 📄 Licencia
 
-Este proyecto es de dominio público y puede ser utilizado libremente por cualquier persona. No se requiere atribución, aunque sería apreciada. Puedes copiar, modificar, distribuir y realizar el trabajo, incluso con fines comerciales, sin pedir permiso.
+Este proyecto es de dominio público y puede ser utilizado libremente por cualquier persona. No se requiere atribución.Puedes copiar, modificar y  distribuir el proyecto. 
 
 
 
