@@ -3,7 +3,7 @@
 ![display 2](https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid.png)
 
 ## 📖 Descripción 
-Este proyecto, desarrollado por **Sergio Gallegos Guerrero**, es una galería de imágenes implementada con **HTML** y **CSS**. Utiliza **Grid** para un diseño **responsivo** y **adaptable**, ofreciendo una experiencia de usuario fluida y atractiva.
+Este proyecto, esta desarrollado por **Sergio Gallegos Guerrero**, es una galería de imágenes junto con un menú de navegación implementado con **HTML** y **CSS**. Utiliza **Flexbox** para un diseño **responsivo** y **adaptable**, ofreciendo una experiencia de usuario fluida y atractiva.
 
 ## 🔨 Tecnologías Utilizadas
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) HTML5
@@ -14,13 +14,16 @@ Este proyecto, desarrollado por **Sergio Gallegos Guerrero**, es una galería de
 ## 🔧 Instalación 
 
 Puedes hacerlo de dos formas: 
-
-> Descangando el proyecto desde esta misma página, para hacerlo tienes que seguir los siguientes pasos: 
+>[!TIP]
+>
+> Descangando el proyecto desde esta misma **página**, para hacerlo tienes que seguir los siguientes pasos: 
 1. Hacemos clic en el botón **Code** en la esquina superior derecha del repositorio de GitHub.
 2. Seleccionamos la opción **Download ZIP** para descargar el proyecto.
 3. Una vez completada la **descarga**, **extraemos** los archivos del **ZIP** en una ubicación deseada de nuestro equipo. Con esto, tendremos el proyecto disponible de forma **local** para su uso y exploración.
 
-> Mediante comandos en la terminal:
+>[!TIP]
+>
+> Mediante **comandos** en la **terminal**:
 1. Abre la **terminal** de tu equipo.
 2. Navega hasta el directorio donde deseas clonar el proyecto usando el comando `cd`.
    
